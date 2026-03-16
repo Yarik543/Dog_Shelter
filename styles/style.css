@@ -237,6 +237,37 @@ img {
   margin-inline: auto;
 }
 
+/*Блок 4*/
+.fourth-block {
+  background-color: var(--color-light-xl);
+  padding-block: var(--section-paddingBlock);
+  text-align: center;
+}
+
+.helps-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 87px 0;
+}
+
+.item-card img,
+.item-card-second_row img {
+  margin-inline: auto;
+  margin-bottom: 30px;
+}
+
+.helps-container-two {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0120px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 55px 87px 0;
+}
+
 /*Медиа-запросы*/
 @media (hover: hover) {
   button:hover {
