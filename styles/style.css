@@ -262,10 +262,101 @@ img {
 .helps-container-two {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 0120px;
+  gap: 0 120px;
   justify-content: space-around;
   align-items: center;
   padding: 55px 87px 0;
+}
+
+/*блок 5*/
+.fifth-block {
+  background-color: var(--color-light-l);
+  padding-block: var(--section-paddingBlock);
+  padding-inline: 142px;
+}
+
+.fifth-block .container {
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+}
+
+.donation-container {
+  max-width: clamp(250px, 30%, 50%);
+}
+
+.donation-container h5 {
+  margin-top: 20px;
+}
+
+.cardPay_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin-block: 20px;
+}
+
+.donation-container p {
+  font-family: Arial;
+  font-size: 12px;
+  color: var(--color-dark-m);
+  font-style: italic;
+}
+
+/*Footer*/
+.footer {
+  background-image: url("../img/start-screen-gradient-background.png");
+  background-size: cover;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 160px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.footer .container h3 {
+  color: var(--color-light-xl);
+  margin-bottom: 40px;
+  max-width: 248px;
+}
+
+.email-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.phone-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.email-container h4,
+.phone-container h4,
+.place_one-container h4,
+.place_two-container h4 {
+  color: var(--color-primary);
+}
+
+.place_one-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+
+.place_two-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /*Медиа-запросы*/
