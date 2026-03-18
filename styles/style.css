@@ -379,6 +379,7 @@ img {
 
   .container {
     padding-inline: 10px;
+    overflow-x: hidden;
   }
 
   .start-screen-gradient-background {
@@ -438,7 +439,6 @@ img {
   }
 
   .second-block .text-block h3 {
-    max-width: 200px;
     margin-inline: auto;
   }
 
