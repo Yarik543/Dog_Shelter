@@ -28,6 +28,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -379,7 +380,6 @@ img {
 
   .container {
     padding-inline: 10px;
-    overflow-x: hidden;
   }
 
   .start-screen-gradient-background {
