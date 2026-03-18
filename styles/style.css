@@ -121,6 +121,10 @@ img {
   align-items: center;
 }
 
+.burger_menu {
+  display: none;
+}
+
 .menu-container li {
   list-style-type: none;
 }
@@ -360,6 +364,64 @@ img {
 }
 
 /*Медиа-запросы*/
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .container {
+    padding-inline: 10px;
+  }
+
+  .start-screen-gradient-background {
+    height: 823px;
+  }
+
+  .header-block .container {
+    padding-inline: 20px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+  /*Hero*/
+  .hero-block .container {
+    display: block;
+    padding-top: 60px;
+  }
+
+  .hero-block .text-block {
+    margin-top: 0;
+  }
+
+  .hero-block .text-block h2 {
+    max-width: 200px;
+  }
+
+  .hero-block .text-block p {
+    text-align: center;
+  }
+
+  .btn-makeFriend {
+    margin-inline: auto;
+  }
+
+  .hero-block img {
+    max-width: 260px;
+    max-height: 272px;
+    margin-top: 105px;
+    margin-left: auto;
+  }
+}
+
 @media (hover: hover) {
   button:hover {
     background-color: var(--color-button-hover);
