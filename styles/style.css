@@ -223,9 +223,16 @@ img {
   margin-block: 60px;
 }
 
+.pets-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 53px;
+}
+
 .pet-card {
   background-color: var(--color-light-s);
   border-radius: 9px;
+  padding-bottom: 30px;
 }
 
 .pet-card h4 {
@@ -235,7 +242,19 @@ img {
 .btn-learn_More {
   background-color: transparent;
   border: 2px solid var(--color-primary);
-  margin: 30px auto;
+  margin: 30px auto 0;
+}
+
+.arrow-prev,
+.arrow-next {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  align-self: center;
+}
+
+.arrow-prev:hover,
+.arrow-next:hover {
+  transform: scale(1.1);
 }
 
 .Get-pet {
@@ -436,6 +455,7 @@ img {
 
   .second-block .text-block {
     max-width: 300px;
+    text-align: center;
   }
 
   .second-block .text-block h3 {
@@ -453,35 +473,84 @@ img {
 
   /*Блок 3*/
   .third-block {
-    background-color: var(--color-light-l);
-    text-align: center;
-    padding-block: var(--section-paddingBlock);
+    padding-block: 42px;
   }
 
   .pets_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 60px;
+    flex-wrap: wrap;
+    margin-block: 42px;
+    gap: 20px;
+  }
+
+  .pets-cards-wrapper {
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-inline: 5%;
+    order: 1;
+    justify-content: flex-start;
+    scroll-padding-inline: 5%;
   }
 
   .pet-card {
-    background-color: var(--color-light-s);
-    border-radius: 9px;
+    flex: 0 0 90%;
+    scroll-snap-align: center;
   }
 
-  .pet-card h4 {
-    margin-top: 30px;
+  .pets-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    order: 2;
+    width: 100%;
   }
 
-  .btn-learn_More {
-    background-color: transparent;
-    border: 2px solid var(--color-primary);
-    margin: 30px auto;
+  .pets_container {
+    flex-wrap: wrap;
+    margin-block: 42px;
+    gap: 50px;
   }
 
-  .Get-pet {
+  .pets-cards-wrapper {
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-inline: 5%;
+    order: 1;
+    justify-content: flex-start;
+    scroll-padding-inline: 5%;
+  }
+
+  .pet-card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+
+  .pet-card img {
     margin-inline: auto;
+  }
+
+  .arrow-prev {
+    order: 2;
+  }
+
+  .arrow-next {
+    order: 3;
+  }
+
+  .arrow-prev,
+  .arrow-next {
+    margin-inline: 20px;
   }
 }
 
